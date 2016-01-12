@@ -2,8 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
     actions: {
-        sync(value) {
-            console.log("quetionnaire: length:", value.length);
+        sync(name, value) {
+            console.log("quetionnaire: ", 
+                        name, value.length);
         }
     }
 });
